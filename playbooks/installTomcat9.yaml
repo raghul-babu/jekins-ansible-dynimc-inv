@@ -1,4 +1,4 @@
-- hosts: newAppserver
+- hosts: newappserver
   become: true
   tasks:
     - name: Install Java
