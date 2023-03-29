@@ -1,15 +1,16 @@
 provider "aws"{
-region = "ap-southeast-1"
+region="us-east-1"
+aws_access_key: AKIAUFLMHGCAMWUP6MEA
+aws_secret_key: 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
 }
 
-resource "aws_instance" "AWSInstance" {
-     ami = "ami-0319ac76374b9fe74"
-	 instance_type = "t2.micro"
-	 key_name = "devopsmss"
-	 security_groups = ["launch-wizard-2"]
-	 tags = {
-	 Name = "tomcatservers"
-	 }
+resource "aws_instance" "AWSInstance"{
+    ami="ami-016eb5d644c333ccb"
+    instance_type="t2.micro"
+    key_name="RaghulDevops"
+    security_groups=["launch-wizard-1"]
+    tags={
+        name="terraform server"
+    }
 }
-
 
