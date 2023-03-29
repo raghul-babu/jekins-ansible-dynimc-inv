@@ -10,7 +10,7 @@ resource "aws_instance" "AWSInstance"{
     key_name="RaghulDevops"
     security_groups=["launch-wizard-1"]
     tags={
-        name="terraformserver"
+        name="newAppserverr"
     }
 }
 
